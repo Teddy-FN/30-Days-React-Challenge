@@ -1,0 +1,104 @@
+/* Exercise 1 */
+.header-wrapper,
+.card-wrapper,
+.user-card-profile {
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 100px auto;
+    width: 70%;
+    border: .5px solid grey;
+    border-radius: 10px;
+}
+
+.logo-header {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.img-wrapper {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.img-wrapper img {
+    width: 190px;
+}
+
+
+/* Exercise 2 */
+.card-wrapper {
+    background-color: rgb(198, 234, 248);
+}
+
+.logo-card-wrapper {
+    text-align: center;
+}
+
+.logo-card-wrapper h1 {
+    margin-top: 10px;
+    font-weight: lighter;
+    letter-spacing: -.5px;
+}
+
+.subtitle-wrapper {
+    margin: 20px auto;
+    letter-spacing: 1px;
+}
+
+.form-wrapper {
+    margin: auto;
+    width: 47%;
+    margin-top: 20px;
+    display: block;
+}
+
+.main-wrapper {
+    margin-top: 20px;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
+
+.input-wrapper input {
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.btn-wrapper button {
+    width: 50%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 157, 157);
+    color: #fff;
+    margin-top: 20px;
+}
+
+
+
+/* Exercise 3 */
+.btn {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.btn-arr-wrapper {
+    margin-top: 10px;
+}

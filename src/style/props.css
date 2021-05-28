@@ -1,0 +1,45 @@
+ul li {
+    list-style: none;
+}
+
+.card-wrapper {
+    padding: 10px;
+    border: 1px solid #000;
+    margin: 100px auto;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    width: 60%;
+}
+
+.logo-wrapper {
+    width: auto;
+    letter-spacing: 2px;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid grey;
+}
+
+nav {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+}
+
+nav ul li {
+    font-size: 20px;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+/* Profile */
+.profile-user-wrapper {
+    margin-top: 20px;
+}
+
+.profile-pic-wrapper img {
+    width: 250px;
+}

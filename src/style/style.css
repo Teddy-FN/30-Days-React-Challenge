@@ -1,0 +1,158 @@
+h1 {
+    font-size: 30px;
+}
+
+/* Exercise 1 */
+/* .header-wrapper {
+    background-color: rgb(236, 232, 232);
+    border: 1px solid #000;
+    padding: 10px;
+    width: 80%;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 5px 7px 3px rgba(0, 0, 0, .5);
+}
+.header-wrapper h1 {
+    margin: 20px auto;
+    text-align: center;
+}
+.img-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+.img-wrapper img {
+    width: 200px;
+} */
+
+/* Exercise 2 */
+/* .header-wrapper {
+    width: 90%;
+    margin: 200px auto;
+    background-color: skyblue;
+    border-radius: 15px;
+}
+.header-text {
+    margin: 30px auto;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.header-text h1 {
+    font-size: 30px;
+    letter-spacing: -1px;
+    font-weight: lighter;
+
+}
+.header-text p {
+    margin: 25px auto;
+    letter-spacing: .9px;
+}
+.form-wrapper {
+    width: 50%;
+    margin: auto;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-wrapper input {
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-wrapper {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-wrapper button {
+    background-color: rgb(250, 92, 92);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    width: 250px;
+    height: 30px;
+    margin-bottom: 30px;
+} */
+
+
+/* Exercise 3 */
+.card-profile {
+    border: 1px solid grey;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: auto;
+    margin: 20px auto;
+    width: 70%;
+}
+
+.header-wrapper img {
+    width: 250px;
+}
+
+.name-wrapper {
+    margin: 20px 0;
+    display: flex;
+    width: 27%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-name {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.checklist-wrapper img {
+    width: 45px;
+}
+
+.job-title {
+    font-size: 18px;
+    color: rgb(192, 192, 192);
+}
+
+.skills-wrapper {
+    margin: 20px 0;
+}
+
+.web-tech-wrapper {
+    display: flex;
+}
+
+.ul-wrapper {
+    list-style: none;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.ul-wrapper li {
+    justify-content: space-between;
+    background-color: green;
+    margin: 10px;
+    padding: 5px;
+    flex-wrap: wrap;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.img-footer-wrapper img {
+    width: 12px;
+    margin-right: 10px;
+}
