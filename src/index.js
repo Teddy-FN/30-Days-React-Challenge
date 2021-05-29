@@ -1,65 +1,112 @@
-import React from 'react'
+import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
-import './style/props.css'
 
-const GenerateColor = (props) => {
-  console.log('INI PROPS COLOR',props)
-  const data = props
-  const { colorsText } = data
-  console.log('colorsTextWKWKWKW',colorsText)
-  return (
-    <header>
-        <div className="header-wrapper">
-          <h1>{props.text.title}</h1>
-        </div>
-        <section>
-            <HexaColor color={colorsText}/>
-        </section>
-    </header>
-  )
+// Header Class Comp
+class Header extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Hello This is Class Components</h1>
+        <h2>Getting Staeted</h2>
+        <h3>By : Teddy Ferdian Abrar Amrullah</h3>
+        <small>May, 2021</small>
+      </div>
+    )
+  }
 }
 
-const HexaColor = ({color}) => {
-  console.log('INI PROPS HEXA',color)
-  let arr = []
-  for (let i = 0; i <= 5; i ++) {
-    let Hexcolors = '#'
-    for (let hexa = 0; hexa < 6; hexa++) {
-      Hexcolors += color.charAt(Math.floor(Math.random() * color.length))
-    }
-    console.log('FINAL',Hexcolors)
-    arr.push(Hexcolors)
+
+
+class TechList extends Component {
+  constructor(props) {
+    super(props)
   }
-  console.log('ARR HEXA',arr)
-  return (
-    <main>
+
+  render() {
+    const techWebs = [
+      'HTML', 'CSS', 'JS', 'React', 'GIT', 'Node', "Express"
+    ]
+    return (
+      <article>
         <section>
+          <h1>Tech List</h1>
+        </section>
           {
-            arr.map((items, idx) => {
+            techWebs.map((items, idx) => {
+              console.log('ITEMS ARR',items)
               return (
-                <div key={idx} className="hexa-color" style={{ backgroundColor: items }}>
-                  <p>{items}</p>
-                </div>
+                  <ul key={idx}>
+                    <li>{items}</li>
+                  </ul>
               )
             })
           }
-        </section>
-    </main>
-  )
+      </article>
+    )
+  }
 }
 
-const App = () => {
-  const colorsText = '0123456789abcdef'
-  const text = {
-    title : 'Generate Colors',
-    date: new Date()
+// Main
+class Main extends Component {
+  constructor(props) {
+    super(props)
   }
-  return (
-    <div className="container">
-      <GenerateColor colorsText={colorsText} text={text}/>
-    </div>
-  )
+
+  render() {
+    return (
+      <article>
+        <section>
+            Reqiuremenst learn React is :
+        </section>
+        <section>
+          <TechList/>
+        </section>
+      </article>
+    )
+  }
 }
+
+// Footer Components
+class Footer extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return (
+      <article>
+        <p>CopyRight 2021</p>
+      </article>
+    )
+  }
+}
+
+// Class Components 
+class App extends Component {
+  constructor(props) {
+    super(props)
+  }
+  render()  {
+    return(
+      <div className="container">
+        <header>
+          <Header/>
+        </header>
+        <main>
+          <Main />
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </div>
+    )
+  }
+}
+
 
 const rootElements = document.getElementById('root')
 ReactDOM.render(<App />, rootElements)
