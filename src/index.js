@@ -2,67 +2,64 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './style/props.css'
 
-import Teddy from './img/teddy.png'
-
-
-// Header 
-const Header = ({data, navs}) => {
-  console.table('INI PROPS DATA',data)
-  console.log('INI PROPS NAVS', navs)
-  const navigasi = navs.map((items, idx) => {
-    return <ul key={idx}><li>{items}</li></ul>
-  })
+const GenerateColor = (props) => {
+  console.log('INI PROPS COLOR',props)
+  const data = props
+  const { colorsText } = data
+  console.log('colorsTextWKWKWKW',colorsText)
   return (
-    <div className="card-wrapper">
-        <header className="header-wrapper">
-          <section className="logo-wrapper">
-            <h1>User Profile</h1>
-          </section>
-          <nav>
-            {navigasi}
-          </nav>
-        </header>
-        <main>
-          <article className="profile-user-wrapper"> 
-            <section className="profile-pic-wrapper">
-              <img src={Teddy} alt="profile-user"/>
-            </section>
-            <section>
-              <h1>{data.name.firstName} {data.name.lastName}</h1>
-            </section>
-          </article>
-        </main>
-        <footer>
+    <header>
+        <div className="header-wrapper">
+          <h1>{props.text.title}</h1>
+        </div>
+        <section>
+            <HexaColor color={colorsText}/>
+        </section>
+    </header>
+  )
+}
 
-        </footer>
-    </div>
+const HexaColor = ({color}) => {
+  console.log('INI PROPS HEXA',color)
+  let arr = []
+  for (let i = 0; i <= 5; i ++) {
+    let Hexcolors = '#'
+    for (let hexa = 0; hexa < 6; hexa++) {
+      Hexcolors += color.charAt(Math.floor(Math.random() * color.length))
+    }
+    console.log('FINAL',Hexcolors)
+    arr.push(Hexcolors)
+  }
+  console.log('ARR HEXA',arr)
+  return (
+    <main>
+        <section>
+          {
+            arr.map((items, idx) => {
+              return (
+                <div key={idx} className="hexa-color" style={{ backgroundColor: items }}>
+                  <p>{items}</p>
+                </div>
+              )
+            })
+          }
+        </section>
+    </main>
   )
 }
 
 const App = () => {
-  const data = {
-    name: {
-      firstName: 'Teddy',
-      lastName: 'Ferdian'
-    },
-    age: 22,
-    address: {
-      street: 'Mojo',
-      city: 'Sukoharjo'
-    },
-    job: 'Software Engginer',
-    jobSkill: ['Frontend', 'Backend', 'FullStack'],
-    techWebs : 'HTML, CSS, JavaScript, React, Node, GIT, Express, MongoDB',
+  const colorsText = '0123456789abcdef'
+  const text = {
+    title : 'Generate Colors',
     date: new Date()
   }
-  const navs = [
-    'Contact', 'About', 'Profile'
-  ]
-  return(
-    <div>
-        <Header data={data} navs={navs}/>
+  return (
+    <div className="container">
+      <GenerateColor colorsText={colorsText} text={text}/>
     </div>
   )
 }
+
 const rootElements = document.getElementById('root')
 ReactDOM.render(<App />, rootElements)

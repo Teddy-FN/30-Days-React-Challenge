@@ -1,4 +1,4 @@
-/* Exercise 1 */
+/* Exercise 1
 .header-wrapper,
 .card-wrapper,
 .user-card-profile {
@@ -28,7 +28,7 @@
 
 
 /* Exercise 2 */
-.card-wrapper {
+/* .card-wrapper {
     background-color: rgb(198, 234, 248);
 }
 
@@ -90,7 +90,7 @@
 
 
 /* Exercise 3 */
-.btn {
+/* .btn {
     width: 100%;
     padding: 20px;
     border: none;
@@ -101,4 +101,11 @@
 
 .btn-arr-wrapper {
     margin-top: 10px;
+}  */
+
+
+/* Exercise 4 */
+.container {
+    background-color: royalblue;
+    padding: 20px;
 }
