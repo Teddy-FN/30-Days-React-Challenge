@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Bucket', ;
+    font-size: 50px;
+    src: url('./font/Bucket-RpB73.otf') format('opentype');
+    
+}
+
+@font-face {
+    font-family: 'KacangGoreng';
+    src: url('./font//KacangGoreng-8Mx3z.ttf') format('truetype');
+}
+
+h1, h2 {
+    font-family: 'Bucket';
+    text-align: center;
+}
+
+h1, h2, p {
+    color: #fff;
+}
+p {
+    font-family: 'KacangGoreng';
+    font-size: 30px;
+}
+.container {
+    background-color: rgb(171, 228, 250);
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 10px solid goldenrod;
+}
+.header-wrapper {
+    background-color: goldenrod;
+    margin: 20px auto;
+    width: 40%;
+    padding: 10px;
+    border-radius: 1px;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+.header-wrapper p {
+    background-color: firebrick;
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+.section-wrapper {
+    margin: 100px;
+}
+
+
+.functional {
+    background-color: grey;
+}
+.class {
+    background-color: lawngreen;
+}
+
+
+
+/* Class */
+.class-wrapper {
+    width: 80%;
+    margin: 50px auto;
+    background-color: rgb(9, 110, 110);
+    padding: 20px;
+}
+.class-wrapper h1 { 
+    text-decoration: underline;
+    font-size: 30px;
+}
